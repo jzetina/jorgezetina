@@ -22,11 +22,20 @@ table{border-collapse:collapse;border-spacing:0}
    Mi CSS
    ========================================================================== */
 
+/* ---- root variables ---- */
+
+:root {
+  --redborder: rgba(255,74,110,.3);
+  --turquoiseborder: rgba(36,177,209,.3);
+  --yellowborder: rgba(255,221,87,.3);
+  --purpleborder: rgba(184,107,255,.3);
+  --greenborder: rgba(35,209,153,.3);
+}
+
 /* ---- base ---- */
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -37,6 +46,11 @@ html {
 canvas {
   display:block;
   vertical-align:bottom;
+}
+
+::selection {
+    background-color: #ff4a6e;
+    color: #fff;
 }
 
 .container-fluid {
@@ -58,4 +72,92 @@ canvas {
 .child-container {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* ---- hero ---- */
+
+.is-link {
+    color: #212121;
+}
+
+.is-link:hover, .is-link.is-active {
+    box-shadow: inset 0 -6px 0 rgba(74, 125, 227, 0.4);
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    max-width: 20em;
+}
+
+/* ---- clients section ---- */
+
+/*#clients {
+    width: 100%;
+    height: 200px;
+}*/
+
+/* ---- skills ---- */
+
+#skills {
+    margin-top: -10rem;
+    padding-bottom: 1rem;
+}
+
+.box {
+    padding: 0;
+    border-radius: 12px;
+}
+
+.is-skill-icon {
+    width: 15%;
+    margin: 24px 0;
+}
+
+.skill-title {
+    margin: 24px 0;
+    color: #0f3785;
+    font-weight: bold;
+}
+
+.skill-text {
+    font-size: 1.1em;
+}
+
+.list-title {
+    color: rgba(74, 125, 227, 1);
+    margin: 15px 0 10px 0;
+}
+
+.is-blue {
+    background-image: linear-gradient( 109.6deg,  rgba(12,124,203,1) 23%, rgba(39,78,243,1) 95.2% );
+}
+
+.white-text {
+    color: #fff !important;
+}
+
+.padder {
+    padding: 12px 48px !important;
+}
+
+.hero.is-medium.is-blue {
+    transform: skew(0, 3deg) translateY(60px);
+}
+
+.hero.is-medium.is-blue > .hero-body {
+    transform: skew(0, -3deg) translateY(-60px);
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        margin-top: -3rem;
+    }
+
+    .mobile-title {
+        padding-top: 60px;
+    }
+
+    .mobile-padder {
+        padding-bottom: 10rem;
+    }
 }

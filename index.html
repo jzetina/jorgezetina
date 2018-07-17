@@ -11,8 +11,8 @@ Location: Villahermosa, Tabasco, MX
 
 /* WEBSITE */
 
-Last update: July 17th, 2018            
-Standards: HTML5, CSS3, JavaScript                            
+Last update: July 17th, 2018
+Standards: HTML5, CSS3, JavaScript
 Components: Animate.css, WOW.js, Bulma, jQuery
 Software: SublimeText, Photoshop, Illustrator
 
@@ -36,6 +36,7 @@ something because of my little contribution!
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="assets/img/inu-gradient.png">
 	<!-- web name -->
 	<title>Jorge Zetina</title>
 	<!-- custom css -->
@@ -51,8 +52,8 @@ something because of my little contribution!
 		<div class="container">
 			<nav class="navbar">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="/">
-						<img src="https://bulma.io/images/bulma-logo.png" alt="JT icon">
+					<a class="navbar-item" href="#">
+						<img src="assets/img/inu-gradient.png" alt="inu icon">
 					</a>
 
 					<strong class="navbar-item is-tagline">
@@ -69,26 +70,26 @@ something because of my little contribution!
 				<div id="navbar-default" class="navbar-menu">
 					<div class="navbar-end">
 						<span class="navbar-item">
-							<a class="is-link is-active" href="/">
-								Home
+							<a class="is-link is-active" href="#inicio">
+								Inicio
 							</a>
 						</span>
 
 						<span class="navbar-item">
-							<a class="is-link is-link" href="/css-in-44-minutes-ebook">
-								CSS Book
+							<a class="is-link" href="#intro">
+								Intro
 							</a>
 						</span>
 
 						<span class="navbar-item">
-							<a class="is-link is-link" href="/creating-interfaces-with-bulma-ebook">
-								Bulma Book
+							<a class="is-link" href="#servicios">
+								Servicios
 							</a>
 						</span>
 
 						<span class="navbar-item">
-							<a class="is-link modal-button" data-target="c">
-								Contact
+							<a class="is-link" href="#contacto">
+								Contacto
 							</a>
 						</span>
 					</div>
@@ -97,15 +98,98 @@ something because of my little contribution!
 		</div>
 	</section>
 
-	<section class="hero">
+	<section class="hero is-large mobile-padder">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title">
-					Hero title
-				</h1>
-				<h2 class="subtitle">
-					Hero subtitle
-				</h2>
+				<div class="columns">
+					<div class="column is-half">
+						<h1 class="title">
+							Hero title
+						</h1>
+						<p class="intro-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hero is-medium is-blue">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns">
+					<div class="column">
+						<h1 class="title white-text mobile-title">Habilidades</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section has-text-centered" id="skills">
+		<div class="container">
+			<div class="box">
+				<div class="columns is-centered">
+					<div class="column has-text-centered padder">
+						<img class="is-skill-icon" src="assets/img/icon-frontend.svg" alt="Code">
+						<h1 class="is-size-4 skill-title">Desarrollador Web</h1>
+		                <p class="skill-text">Siempre es un reto empezar con una idea y terminar con un producto completo</p>
+		                <p class="list-title has-text-weight-normal skill-text">Lenguajes que manejo:</p>
+		                <p class="skill-text">HTML, CSS, JavaScript, PHP, MySQL</p>
+		                <p class="list-title has-text-weight-normal skill-text">Herramientas para desarrollar:</p>
+		                <ul class="skill-text">
+		                	<li>Atom</li>
+		                	<li>GitHub</li>
+							<li>Bootstrap</li>
+							<li>Foundation</li>
+							<li>Bulma</li>
+							<li>SASS</li>
+		                </ul>
+					</div>
+					<div class="column has-text-centered padder">
+						<img class="is-skill-icon" src="assets/img/pen-fancy-solid.svg" alt="Code">
+						<h1 class="is-size-4 skill-title">Diseñador</h1>
+		                <p class="skill-text">Me gusta crear contenidos simples pero visualmente atractivos para los usuarios</p>
+		                <p class="list-title has-text-weight-normal skill-text">Me gusta diseñar:</p>
+		                <p class="skill-text">UX, UI, Web, Móvil, Apps</p>
+		                <p class="list-title has-text-weight-normal skill-text">Herramientas que utilizo:</p>
+		                <ul class="skill-text">
+		                	<li>Marvel</li>
+		                	<li>Figma</li>
+							<li>Sketch</li>
+		                	<li>Photoshop</li>
+							<li>Illustrator</li>
+		                </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="clients">
+		<div class="container">
+			<div class="columns is-centered is-vcentered is-hidden-mobile">
+				<div class="column has-text-centered">
+					<img src="assets/img/zetauno.png">
+				</div>
+				<div class="column has-text-centered">
+					<img src="assets/img/crowncity.png">
+				</div>
+				<div class="column has-text-centered">
+					<img src="assets/img/pshma.png">
+				</div>
+				<div class="column has-text-centered">
+					<img src="assets/img/geekspace.png">
+				</div>
+				<div class="column has-text-centered">
+					<img src="assets/img/ciiea.png">
+				</div>
+			</div>
+			<div class="columns is-centered is-hidden-tablet">
+				<div class="column has-text-centered">
+					<img class="clients-img" src="assets/img/clients-mobile.png">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -113,7 +197,7 @@ something because of my little contribution!
 	<footer class="footer">
 		<div class="content has-text-centered">
 			<a href="https://bulma.io?ref=jorgezetinacom" target="_blank">
-				<img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="256" height="48">
+				<img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128" height="24">
 			</a>
 		</div>
 	</footer>
