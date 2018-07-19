@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// Switch redirect
+document.getElementById('switchEN').addEventListener("change", function(){
+    //if (this.checked) window.location.replace("https://jzetina.github.io/minimal-portfolio/en");
+    if (this.checked) window.location.href = 'http://localhost/minimal-portfolio/en';
+});
