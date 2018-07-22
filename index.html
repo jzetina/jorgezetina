@@ -45,12 +45,13 @@ something because of my little contribution!
 	<!-- vendor css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" integrity="sha384-cX6t2fHVBGJY7XVcJYPJJJS7nHG0AcC45H//gbb9MZkBxLD4rQ3SQkTYZwxOclNs" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
 
 	<!-- bulma init -->
-	<section class="section is-header">
-		<div class="container">
+	<section class="hero is-fullheight">
+		<div class="hero-head">
 			<nav class="navbar">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="#">
@@ -77,19 +78,19 @@ something because of my little contribution!
 						</span>
 
 						<span class="navbar-item">
-							<a class="is-link" href="#intro">
-								Intro
+							<a class="is-link" href="#skills">
+								Habilidades
 							</a>
 						</span>
 
 						<span class="navbar-item">
-							<a class="is-link" href="#servicios">
-								Servicios
+							<a class="is-link" href="#projects">
+								Proyectos
 							</a>
 						</span>
 
 						<span class="navbar-item">
-							<a class="is-link" href="#contacto">
+							<a class="is-link" href="#contact">
 								Contacto
 							</a>
 						</span>
@@ -104,18 +105,17 @@ something because of my little contribution!
 				</div>
 			</nav>
 		</div>
-	</section>
 
-	<section class="hero is-large mobile-padder">
-		<div class="hero-body">
-			<div class="container">
+		<!-- hero section -->
+		<div class="hero-body" id="inicio">
+			<div class="container is-fluid">
 				<div class="columns">
 					<div class="column is-half">
 						<h1 class="title">
 							Hero title
 						</h1>
 						<p class="intro-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							Lorem <span class="shadow-red">ipsum dolor</span> sit amet, <span class="shadow-yellow">consectetur</span> adipisicing elit, <span class="shadow-turquoise">sed do eiusmod</span> tempor incididunt <span class="shadow-purple">ut labore</span> et dolore <span class="shadow-green">magna aliqua</span>.
 						</p>
 					</div>
 				</div>
@@ -123,60 +123,189 @@ something because of my little contribution!
 		</div>
 	</section>
 
-	<section class="hero is-medium is-blue">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns">
-					<div class="column">
-						<h1 class="title white-text mobile-title">Habilidades</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	<!-- skills section -->
 	<section class="section has-text-centered" id="skills">
 		<div class="container">
+			<p class="has-text-left section-title"><span class="shadow-turquoise">Habilidades</span></p>
 			<div class="box">
 				<div class="columns is-centered">
-					<div class="column has-text-centered padder">
+
+					<div class="column has-text-centered padder mid-border">
 						<img class="is-skill-icon" src="assets/img/icon-frontend.svg" alt="Code">
 						<h1 class="is-size-4 skill-title">Desarrollador Web</h1>
-		                <p class="skill-text">Siempre es un reto empezar con una idea y terminar con un producto completo</p>
-		                <p class="list-title has-text-weight-normal skill-text">Lenguajes que manejo:</p>
-		                <p class="skill-text">HTML, CSS, JavaScript, PHP, MySQL</p>
-		                <p class="list-title has-text-weight-normal skill-text">Herramientas para desarrollar:</p>
-		                <ul class="skill-text">
-		                	<li>Atom</li>
-		                	<li>GitHub</li>
+		        <p class="skill-text">Siempre es un reto empezar con una idea y terminar con un producto completo</p>
+		        <p class="list-title has-text-weight-normal skill-text">Lenguajes que manejo:</p>
+		        <p class="skill-text">HTML, CSS, JavaScript, PHP, MySQL</p>
+		        <p class="list-title has-text-weight-normal skill-text">Herramientas para desarrollar:</p>
+		        <ul class="skill-text">
+		         	<li>Atom</li>
+		          <li>GitHub</li>
 							<li>Bootstrap</li>
 							<li>Foundation</li>
 							<li>Bulma</li>
 							<li>SASS</li>
-		                </ul>
+		        </ul>
 					</div>
+
 					<div class="column has-text-centered padder">
 						<img class="is-skill-icon" src="assets/img/pen-fancy-solid.svg" alt="Code">
 						<h1 class="is-size-4 skill-title">Diseñador</h1>
-		                <p class="skill-text">Me gusta crear contenidos simples pero visualmente atractivos para los usuarios</p>
-		                <p class="list-title has-text-weight-normal skill-text">Me gusta diseñar:</p>
-		                <p class="skill-text">UX, UI, Web, Móvil, Apps</p>
-		                <p class="list-title has-text-weight-normal skill-text">Herramientas que utilizo:</p>
-		                <ul class="skill-text">
-		                	<li>Marvel</li>
-		                	<li>Figma</li>
+		        <p class="skill-text">Me gusta crear contenidos simples pero visualmente atractivos para los usuarios</p>
+		        <p class="list-title has-text-weight-normal skill-text">Me gusta diseñar:</p>
+		        <p class="skill-text">UX, UI, Web, Móvil, Apps</p>
+		        <p class="list-title has-text-weight-normal skill-text">Herramientas que utilizo:</p>
+		        <ul class="skill-text">
+		         	<li>Marvel</li>
+		          <li>Figma</li>
 							<li>Sketch</li>
-		                	<li>Photoshop</li>
+		          <li>Photoshop</li>
 							<li>Illustrator</li>
-		                </ul>
+		        </ul>
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- projects section -->
+	<section class="section has-text-centered" id="projects">
+		<div class="container">
+			<p class="section-title has-text-left"><span class="shadow-purple">Proyectos</span></p>
+				<div class="columns is-centered">
+
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Proyecto 1
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="http://via.placeholder.com/1920x1080" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="#" class="card-footer-item">Ver Página</a>
+						  </footer>
+						</div>
+					</div>
+
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Proyecto 2
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="http://via.placeholder.com/1920x1080" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="#" class="card-footer-item">Ver Página</a>
+						  </footer>
+						</div>
+					</div>
+
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Proyecto 3
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="http://via.placeholder.com/1920x1080" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="#" class="card-footer-item">Ver Página</a>
+						  </footer>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="columns is-centered">
+
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Proyecto 4
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="http://via.placeholder.com/1920x1080" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="#" class="card-footer-item">Ver Página</a>
+						  </footer>
+						</div>
+					</div>
+
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Proyecto 5
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="http://via.placeholder.com/1920x1080" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="#" class="card-footer-item">Ver Página</a>
+						  </footer>
+						</div>
+					</div>
+
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Proyecto 6
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="http://via.placeholder.com/1920x1080" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="#" class="card-footer-item">Ver Página</a>
+						  </footer>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="columns is-centered">
+					<div class="column has-text-center">
+						<a class="button is-medium is-info" href="#" target="_blank">
+					    <span class="icon">
+					      <i class="fab fa-github"></i>
+					    </span>
+					    <span>Más Proyectos</span>
+					  </a>
+					</div>
+				</div>
+
+		</div>
+	</section>
+
+	<!-- clients section -->
 	<section class="section" id="clients">
 		<div class="container">
+			<p class="section-title has-text-centered"><span class="shadow-yellow">Clientes</span></p>
 			<div class="columns is-centered is-vcentered is-hidden-mobile">
 				<div class="column has-text-centered">
 					<img src="assets/img/zetauno.png">
@@ -202,6 +331,7 @@ something because of my little contribution!
 		</div>
 	</section>
 
+	<!-- footer section -->
 	<footer class="footer">
 		<div class="content has-text-centered">
 			<a href="https://bulma.io?ref=jorgezetinacom" target="_blank">
