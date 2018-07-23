@@ -120,6 +120,10 @@ canvas {
   max-width: 20em;
 }
 
+.is-link.caret {
+  color: #0f3785;
+}
+
 /* ---- skills ---- */
 
 #skills {
