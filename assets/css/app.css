@@ -130,10 +130,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0 -6px 0 rgba(74, 125, 227, 0.4);
 }
 
-.title {
-  padding-top: 60px;
-}
-
 .intro-text {
   font-size: 1.5rem;
   max-width: 20em;
@@ -144,7 +140,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .landing-img {
-  width: 60%;
+  width: 65%;
 }
 
 /* ---- skills ---- */
@@ -215,15 +211,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 768px) {
-    #skills {
-      margin-top: -3rem;
+    .column.has-text-centered.padder.mid-border:first-child {
+      border-right: none;
     }
 
-    .mobile-title {
-      padding-top: 60px;
-    }
-
-    .mobile-padder {
-      padding-bottom: 10rem;
+    #contact {
+      padding-bottom: 1rem !important;
     }
 }
