@@ -24,12 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// Switch redirect
-document.getElementById('switchEN').addEventListener("change", function(){
-    //if (this.checked) window.location.replace("https://jzetina.github.io/minimal-portfolio/en");
-    if (this.checked) window.location.href = 'http://localhost/minimal-portfolio/en';
-});
-
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -65,4 +59,10 @@ $('a[href*="#"]')
         });
       }
     }
+  });
+
+  // Switch redirect
+  document.getElementById('switchEN').addEventListener("change", function(){
+      //if (this.checked) window.location.replace("https://jzetina.github.io/minimal-portfolio/en");
+      if (this.checked) window.location.href = 'http://localhost/minimal-portfolio/en';
   });
