@@ -37,6 +37,7 @@ table{border-collapse:collapse;border-spacing:0}
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 html {
@@ -53,16 +54,6 @@ canvas {
   color: #fff;
 }
 
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
 .parent-container {
   display: table;
   height: 100vh;
@@ -74,11 +65,35 @@ canvas {
   vertical-align: middle;
 }
 
+body::-webkit-scrollbar {
+    width: 0.9em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 /* ---- general ---- */
 
 .section-title {
   font-size: 1.5em;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.section-subtitle {
+  color: rgb(145, 149, 149);
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: rgba(208, 208, 208, 0.3) !important;
+  padding-bottom: 2rem !important;
 }
 
 /* ---- hero ---- */
@@ -115,13 +130,21 @@ canvas {
   box-shadow: inset 0 -6px 0 rgba(74, 125, 227, 0.4);
 }
 
+.title {
+  padding-top: 60px;
+}
+
 .intro-text {
   font-size: 1.5rem;
   max-width: 20em;
 }
 
 .is-link.caret {
-  color: #0f3785;
+  color: rgba(12,124,203,1);
+}
+
+.landing-img {
+  width: 60%;
 }
 
 /* ---- skills ---- */
@@ -148,7 +171,7 @@ canvas {
 
 .skill-title {
   margin: 24px 0;
-  color: #0f3785;
+  color: rgba(37, 54, 126, 1);
   font-weight: bold;
 }
 
@@ -183,6 +206,12 @@ canvas {
 
 .hero-body {
   padding-top: -3rem !important;
+}
+
+/* ---- footer ---- */
+
+.footer-social-text {
+  font-size: 1.15em;
 }
 
 @media screen and (max-width: 768px) {
