@@ -210,6 +210,15 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.15em;
 }
 
+.ball {
+  position: fixed;
+  border-radius: 100%;
+  opacity: 0.5;
+	overflow-x: hidden;
+	height: 100vh;
+  z-index: -1;
+}
+
 @media screen and (max-width: 768px) {
     .column.has-text-centered.padder.mid-border:first-child {
       border-right: none;
