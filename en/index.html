@@ -11,7 +11,7 @@ Location: Villahermosa, Tabasco, MX
 
 /* WEBSITE */
 
-Last update: July 24th, 2018
+Last update: August 22, 2018
 Standards: HTML5, CSS3, JavaScript
 Components: Animate.css, WOW.js, Bulma, jQuery
 Software: SublimeText, Photoshop, Illustrator
@@ -210,7 +210,65 @@ something because of my little contribution!
 						  </footer>
 						</div>
 					</div>
+					
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						Crown City Casino v2
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="../assets/img/crown-new.jpg" alt="Crown City Casino Current">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="https://crowncity.mx" target="_blank" class="card-footer-item is-link">See Page</a>
+						  </footer>
+						</div>
+					</div>
+					
+					<div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						PSHMA VLC
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="../assets/img/pshma.jpg" alt="PESHMA VI EL CI">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="https://pshmavlc.com" target="_blank" class="card-footer-item is-link">See Page</a>
+						  </footer>
+						</div>
+					</div>
 
+				</div>
+
+				<div class="columns is-centered">
+				    
+				    <div class="column has-text-centered padder">
+						<div class="card">
+							<header class="card-header">
+    						<p class="card-header-title">
+      						No Straw Campaign
+								</p>
+  						</header>
+							<div class="card-image">
+						    <figure class="image is-19by9">
+						      <img src="../assets/img/sinpopote.jpg" alt="Placeholder image">
+						    </figure>
+						  </div>
+						  <footer class="card-footer">
+						    <a href="https://jzetina.github.io/sinpopote/" class="card-footer-item is-link" target="_blank">See Page</a>
+						  </footer>
+						</div>
+					</div>
+					
 					<div class="column has-text-centered padder">
 						<div class="card">
 							<header class="card-header">
@@ -233,28 +291,6 @@ something because of my little contribution!
 						<div class="card">
 							<header class="card-header">
     						<p class="card-header-title">
-      						No Straw Campaign
-								</p>
-  						</header>
-							<div class="card-image">
-						    <figure class="image is-19by9">
-						      <img src="../assets/img/sinpopote.jpg" alt="Placeholder image">
-						    </figure>
-						  </div>
-						  <footer class="card-footer">
-						    <a href="https://jzetina.github.io/sinpopote/" class="card-footer-item is-link" target="_blank">See Page</a>
-						  </footer>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="columns is-centered">
-
-					<div class="column has-text-centered padder">
-						<div class="card">
-							<header class="card-header">
-    						<p class="card-header-title">
       						Hyper Minimal CV
 								</p>
   						</header>
@@ -265,42 +301,6 @@ something because of my little contribution!
 						  </div>
 						  <footer class="card-footer">
 						    <a href="https://jzetina.github.io/hyper-minimal/" class="card-footer-item is-link" target="_blank">See Page</a>
-						  </footer>
-						</div>
-					</div>
-
-					<div class="column has-text-centered padder">
-						<div class="card">
-							<header class="card-header">
-    						<p class="card-header-title">
-      						Project 2
-								</p>
-  						</header>
-							<div class="card-image">
-						    <figure class="image is-19by9">
-						      <img src="http://via.placeholder.com/1920x1080?text=Designing" alt="Placeholder image">
-						    </figure>
-						  </div>
-						  <footer class="card-footer">
-						    <a href="#projects" class="card-footer-item is-link">See Page</a>
-						  </footer>
-						</div>
-					</div>
-
-					<div class="column has-text-centered padder">
-						<div class="card">
-							<header class="card-header">
-    						<p class="card-header-title">
-      						Project 3
-								</p>
-  						</header>
-							<div class="card-image">
-						    <figure class="image is-19by9">
-						      <img src="http://via.placeholder.com/1920x1080?text=Designing" alt="Placeholder image">
-						    </figure>
-						  </div>
-						  <footer class="card-footer">
-						    <a href="#projects" class="card-footer-item is-link">See Page</a>
 						  </footer>
 						</div>
 					</div>
@@ -363,19 +363,19 @@ something because of my little contribution!
 						<form action="https://formspree.io/jorgezetina@gmail.com" method="POST">
 								<div class="field">
 								  <p class="control">
-								    <input class="input is-medium" type="text" name="name" placeholder="Your name">
+								    <input class="input is-medium" type="text" name="name" placeholder="Your name" required>
 								  </p>
 								</div>
 
 								<div class="field">
 								  <p class="control">
-								    <input class="input is-medium" type="email" name="email" placeholder="Your email">
+								    <input class="input is-medium" type="email" name="email" placeholder="Your email" required>
 								  </p>
 								</div>
 
 								<div class="field">
 								  <p class="control">
-								    <textarea class="textarea is-medium" name="message" placeholder="Your message"></textarea>
+								    <textarea class="textarea is-medium" name="message" placeholder="Your message" required></textarea>
 								  </p>
 								</div>
 
@@ -419,13 +419,11 @@ something because of my little contribution!
 	<!-- custom js & live reload -->
 	<script>
 		document.getElementById('switchES').addEventListener("change", function(){
-				//if (this.checked) window.location.replace("https://jzetina.github.io/minimal-portfolio/en");
-				if (this.checked) window.location.href = 'http://localhost/minimal-portfolio/';
+				if (this.checked) window.location.href = 'https://jorgezetina.com/';
 		});
 	</script>
 	<script src="../assets/js/app.js"></script>
 	<script>new WOW().init();</script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
