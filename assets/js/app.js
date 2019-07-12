@@ -63,5 +63,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Switch redirect
   document.getElementById('switchEN').addEventListener("change", function(){
-      if (this.checked) window.location.href = 'https://jorgezetina.com/en';
+      if (this.checked) window.location.href = 'https://jzetina.github.io/en';
   });
